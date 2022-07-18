@@ -1,0 +1,12 @@
+syntax = "proto2";
+package UNO;
+
+message Command {
+    enum Type {
+        START                           = 0;
+        END                             = 1;
+    }
+    required int64 seqID                = 1;
+    required string uuid                = 2;
+    required Type type                  = 3;
+}

@@ -1,0 +1,16 @@
+syntax = "proto2";
+package TeTo;
+
+message Msg {
+    required string roomID              = 1;
+    required string fromUserID          = 2;
+    repeated string toUserID            = 3;
+    required Type type                  = 4;
+    required bytes content              = 5;
+}
+
+enum Type {
+    USER                                = 0;
+    GAME                                = 1;
+    ROOM                                = 2;
+}

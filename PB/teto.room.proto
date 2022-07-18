@@ -1,0 +1,17 @@
+syntax = "proto2";
+package TeTo_Room;
+
+message RoomInfo {
+    enum Action {
+        START                           = 0;
+        END                             = 1;
+    }
+    enum Game {
+        UNO                             = 0;
+    }
+    required string name                = 1;
+    required string hostID              = 2;
+    required Action action              = 3;
+    required Game game                  = 4;
+    optional bytes content              = 5;
+}

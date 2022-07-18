@@ -1,0 +1,6 @@
+syntax = "proto2";
+package TeTo_Game;
+
+message GameInfo {
+    required bytes content              = 1;
+}

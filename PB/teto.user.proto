@@ -1,0 +1,17 @@
+syntax = "proto2";
+package TeTo_User;
+
+message User {
+    required string uuid                = 1;
+    required string name                = 2;
+}
+
+message UserInfo {
+    enum Type {
+        ADD                             = 0;
+        CHANGE                          = 1;
+        LEAVE                           = 2;
+    }
+    required Type type                  = 1;
+    required User user                  = 2;
+}

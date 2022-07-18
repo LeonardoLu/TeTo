@@ -1,0 +1,1 @@
+protoc --swift_out=swift_pb *.proto

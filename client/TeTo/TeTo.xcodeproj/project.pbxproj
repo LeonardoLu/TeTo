@@ -17,6 +17,12 @@
 		2B2310A22883D40400AD8975 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2310782883D40200AD8975 /* ContentView.swift */; };
 		2B2310A32883D40400AD8975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2310792883D40400AD8975 /* Assets.xcassets */; };
 		2B2310A42883D40400AD8975 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2310792883D40400AD8975 /* Assets.xcassets */; };
+		2B2310B62883E56900AD8975 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2310B52883E56900AD8975 /* Socket.swift */; };
+		2B2310B72883E56900AD8975 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2310B52883E56900AD8975 /* Socket.swift */; };
+		2B2310B92883ED7C00AD8975 /* TeToSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2310B82883ED7C00AD8975 /* TeToSocket.swift */; };
+		2B2310BA2883ED7C00AD8975 /* TeToSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2310B82883ED7C00AD8975 /* TeToSocket.swift */; };
+		2B2310BF2883FBAE00AD8975 /* swift_pb in Resources */ = {isa = PBXBuildFile; fileRef = 2B2310BE2883FBAE00AD8975 /* swift_pb */; };
+		2B2310C02883FBAE00AD8975 /* swift_pb in Resources */ = {isa = PBXBuildFile; fileRef = 2B2310BE2883FBAE00AD8975 /* swift_pb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		2B2310972883D40400AD8975 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B23109B2883D40400AD8975 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2B23109D2883D40400AD8975 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		2B2310B52883E56900AD8975 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		2B2310B82883ED7C00AD8975 /* TeToSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeToSocket.swift; sourceTree = "<group>"; };
+		2B2310BE2883FBAE00AD8975 /* swift_pb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = swift_pb; path = ../../../../PB/swift_pb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +95,7 @@
 		2B2310712883D40200AD8975 = {
 			isa = PBXGroup;
 			children = (
+				2B2310B32883DD6300AD8975 /* iOS */,
 				2B2310762883D40200AD8975 /* Shared */,
 				2B2310852883D40400AD8975 /* macOS */,
 				2B23108E2883D40400AD8975 /* Tests iOS */,
@@ -97,6 +107,7 @@
 		2B2310762883D40200AD8975 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2B2310B42883E54B00AD8975 /* WebClient */,
 				2B2310772883D40200AD8975 /* TeToApp.swift */,
 				2B2310782883D40200AD8975 /* ContentView.swift */,
 				2B2310792883D40400AD8975 /* Assets.xcassets */,
@@ -139,6 +150,23 @@
 				2B23109D2883D40400AD8975 /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		2B2310B32883DD6300AD8975 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		2B2310B42883E54B00AD8975 /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				2B2310BE2883FBAE00AD8975 /* swift_pb */,
+				2B2310B52883E56900AD8975 /* Socket.swift */,
+				2B2310B82883ED7C00AD8975 /* TeToSocket.swift */,
+			);
+			path = WebClient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2310BF2883FBAE00AD8975 /* swift_pb in Resources */,
 				2B2310A32883D40400AD8975 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2310C02883FBAE00AD8975 /* swift_pb in Resources */,
 				2B2310A42883D40400AD8975 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,8 +329,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2310B92883ED7C00AD8975 /* TeToSocket.swift in Sources */,
 				2B2310A12883D40400AD8975 /* ContentView.swift in Sources */,
 				2B23109F2883D40400AD8975 /* TeToApp.swift in Sources */,
+				2B2310B62883E56900AD8975 /* Socket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2310BA2883ED7C00AD8975 /* TeToSocket.swift in Sources */,
 				2B2310A22883D40400AD8975 /* ContentView.swift in Sources */,
 				2B2310A02883D40400AD8975 /* TeToApp.swift in Sources */,
+				2B2310B72883E56900AD8975 /* Socket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
